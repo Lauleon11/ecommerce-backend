@@ -100,7 +100,6 @@
     <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <!-- Cambié la ruta de la imagen a la carpeta pública -->
                 <img src="{{ asset('images/banner1.jpg') }}" class="d-block w-100" alt="Imagen 1">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Bienvenido a Mi Proyecto</h5>
@@ -108,7 +107,6 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <!-- Cambié la ruta de la imagen a la carpeta pública -->
                 <img src="{{ asset('images/banner2.jpg') }}" class="d-block w-100" alt="Imagen 2">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Ofrecemos lo mejor</h5>
@@ -133,25 +131,22 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="category-box">
-                    <!-- Cambié la ruta de la imagen a la carpeta pública -->
-                    <img src="{{ asset('images/ropa.jpg') }}" alt="Categoría 1">
-                    <h3>Categoría 1</h3>
+                    <img src="{{ asset('images/ropa.jpg') }}" alt="Ropa">
+                    <h3>Categoría Ropa</h3>
                     <p>Descubre los productos más populares en esta categoría.</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="category-box">
-                    <!-- Cambié la ruta de la imagen a la carpeta pública -->
-                    <img src="{{ asset('images/zapatos.jpg') }}" alt="Categoría 2">
-                    <h3>Categoría 2</h3>
+                    <img src="{{ asset('images/zapatos.jpg') }}" alt="Zapatos">
+                    <h3>Zapatos</h3>
                     <p>Una selección variada para todos los gustos y necesidades.</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="category-box">
-                    <!-- Cambié la ruta de la imagen a la carpeta pública -->
-                    <img src="{{ asset('images/accesorios.jpg') }}" alt="Categoría 3">
-                    <h3>Categoría 3</h3>
+                    <img src="{{ asset('images/accesorios.jpg') }}" alt="Accesorios">
+                    <h3>Accesorios</h3>
                     <p>Encuentra lo mejor en esta categoría, ideal para ti.</p>
                 </div>
             </div>

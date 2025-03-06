@@ -9,16 +9,16 @@ class ProductController extends Controller
 
     public function index()
     {
-        echo "listado de todos los productos";
+        return view('products.index'); //retornar una lista de productos
     }
 
     public function create()
     {
-        echo "formulario para crear un producto";
+        return view('products.create'); //retorna el formulario para crear un producto
     }
 
     public function show($name)
     {
-        echo "producto: $name";
+        return view('products.show'); //retorna el detalle de un producto
     }
 }
