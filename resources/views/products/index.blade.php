@@ -4,12 +4,11 @@
     <div class="container mt-5">
         <h2 class="text-center mb-4">Lista de Productos</h2>
         <div class="row">
-        
+
             @foreach ($listProducts as $product)
                 <div class="col-md-4 mb-4">
                     <div class="card">
-                        <img src="{{ $product['url_image'] }}" class="card-img-top"
-                            alt="{{ $product['name'] }}">
+                        <img src="{{ $product['url_image'] }}" class="card-img-top" alt="{{ $product['name'] }}">
                         <div class="card-body">
                             <h5 class="card-title">{{ $product['name'] }}</h5>
                             <p class="card-text"><strong>Categoría:</strong> {{ $product['category_id'] }}</p>
@@ -22,6 +21,9 @@
                     </div>
                 </div>
             @endforeach
+
+            {{ $listProducts->links() }}
+
         </div>
     </div>
 @endsection

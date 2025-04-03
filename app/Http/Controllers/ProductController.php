@@ -11,7 +11,7 @@ class ProductController extends Controller
     public function index()
     {   
         //consulta en la base de datos
-        $listProducts = Product::all();
+        $listProducts = Product::paginate();
 
         // dd($listProducts);
 
@@ -25,8 +25,11 @@ class ProductController extends Controller
         return view('products.create'); //retorna el formulario para crear un producto
     }
 
-    public function show($name)
-    {
-        return view('products.show'); //retorna el detalle de un producto
+    public function show($id)
+    {   
+        $product = Product::find($id);
+        return view('products.show', [
+            'product' => $product
+        ]); //retorna el detalle de un producto
     }
 }
