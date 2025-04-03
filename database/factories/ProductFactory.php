@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\Category;
+use App\Models\Product;
 use App\Models\Products;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
@@ -10,10 +11,10 @@ use Illuminate\Database\Eloquent\Model;
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Products>
  */
-class ProductsFactory extends Factory
+class ProductFactory extends Factory
 {
 
-    protected $model = Products::class;
+    protected $model = Product::class;
 
     /**
      * Define the model's default state.
@@ -25,8 +26,9 @@ class ProductsFactory extends Factory
         return [
             'name' => fake()->sentence(),
             'description' => fake()->paragraph(),
-            'price' => fake()->randomFloat(2,1000,500000),
-            'category_id' => Category::inRandomOrder()->value('id') ?? Category::factory()->create()->id
+            'price' => fake()->randomFloat(2,10000,3000000),
+            'category_id' => Category::inRandomOrder()->first()->id,
+            'url_image' => fake()->imageUrl(600,400, 'products', true)
         ];
     }
 }
