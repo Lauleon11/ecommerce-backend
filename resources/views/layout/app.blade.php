@@ -37,6 +37,42 @@
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
+
+        .category-box {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .category-box:hover {
+            transform: translateY(-10px);
+        }
+
+        .category-box img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .category-box h3 {
+            color: #ff6f00;
+            margin-top: 15px;
+        }
+
+        .carousel-inner img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
     </style>
 </head>
 
@@ -52,13 +88,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Inicio</a>
+                        <a class="nav-link active" href="{{ url('/') }}">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Categorías</a>
+                        <a class="nav-link" href="#">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="#">Crear</a>
                     </li>
                 </ul>
             </div>

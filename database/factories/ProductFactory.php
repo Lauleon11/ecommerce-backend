@@ -28,7 +28,7 @@ class ProductFactory extends Factory
             'description' => fake()->paragraph(),
             'price' => fake()->randomFloat(2,10000,3000000),
             'category_id' => Category::inRandomOrder()->first()->id,
-            'url_image' => fake()->imageUrl(600,400, 'products', true)
+            'url_image' => 'https://apexapr.mu/sites/default/files/product-images-2022-11/10th%20gen-01.png'
         ];
     }
 }
